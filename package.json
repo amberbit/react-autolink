@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node example/server.js",
     "build": "rm -rf dist/* && webpack -p --config webpack.production.config.js",
-    "test": "PHANTOMJS_BIN=\"${PHANTOMJS_BIN:=`which phantomjs`}\" ./node_modules/karma/bin/karma start karma.config.js",
     "clean": "rm example/build/app.js"
   },
   "repository": {
@@ -32,10 +31,8 @@
     "istanbul-instrumenter-loader": "^0.1.2",
     "karma": "^0.13.2",
     "karma-mocha": "^0.1.10",
-    "karma-phantomjs-launcher": "^0.1.4",
     "karma-sinon-chai": "^0.3.0",
     "karma-webpack": "^1.7.0",
-    "phantomjs": "^1.9.16",
     "power-assert": "^0.10.2",
     "react-hot-loader": "^1.2.3",
     "webpack": "^1.7.2",
